@@ -19,5 +19,235 @@
   padding: 15px;
   -webkit-box-shadow: 5px 7px 10px #cccccc;
           box-shadow: 5px 7px 10px #cccccc;
+  -webkit-animation: swipein 0.5s ease;
+          animation: swipein 0.5s ease;
+  overflow: scroll;
+}
+
+@-webkit-keyframes swipein {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30%;
+  }
+}
+
+@keyframes swipein {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30%;
+  }
+}
+
+.breadcrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  position: absolute;
+  right: 30px;
+  top: 15px;
+  -webkit-box-shadow: 5px 5px 10px #011026;
+          box-shadow: 5px 5px 10px #011026;
+  background-color: #f8f8f8;
+  font-weight: 500;
+}
+
+.sidepaneltitle {
+  font-family: Copperplate;
+  font-size: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 2px solid green;
+  font-weight: 500;
+  padding: 5px;
+}
+
+.sidepaneltitle::first-letter {
+  text-decoration: underline;
+  -webkit-text-decoration-color: green;
+          text-decoration-color: green;
+}
+
+.sidepanelsubheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  height: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e7e7e7;
+  border-bottom: 1px solid #cccccc;
+}
+
+.annotationbuttonssection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 0 15px 0;
+}
+
+.shapetype {
+  -webkit-box-shadow: 5px 5px 10px #d7d7d7;
+          box-shadow: 5px 5px 10px #d7d7d7;
+  width: 8rem;
+  font-size: 14px;
+  cursor: pointer;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: green;
+  font-weight: 500;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.shapetype:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: green;
+  color: white;
+}
+
+.shapeicon {
+  height: 30px;
+}
+
+.annotationform {
+  position: absolute;
+  padding: 15px;
+  background-color: #ffffff;
+  left: 25%;
+  top: 0;
+  width: 20%;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: right;
+  -webkit-box-shadow: 5px 7px 10px #cccccc;
+          box-shadow: 5px 7px 10px #cccccc;
+}
+
+.annotationforminput {
+  height: 2rem;
+  border: 1px solid green;
+  color: green;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.formbuttongreen {
+  font-weight: 600;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid green;
+  cursor: pointer;
+  background-color: green;
+  color: #ffffff;
+}
+
+.formbuttonwhite {
+  font-weight: 600;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid green;
+  cursor: pointer;
+  background-color: white;
+  color: green;
+}
+
+.formbuttonssection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.annotationslist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: scroll;
+  height: calc(100% - 4rem);
+}
+
+.annotationlistitem {
+  padding: 10px;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  border-bottom: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+  cursor: pointer;
+}
+
+.annotationlistitem:hover {
+  background-color: #cccccc;
+}
+
+.annotationlistitemtitle {
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.annotationlistitemcomment {
+  color: #000000;
+  font-size: 14px;
+}
+
+.annotationlistitemdate {
+  color: #7a7979;
+  font-size: 14px;
+  margin: 5px 0;
 }
 /*# sourceMappingURL=Mapview.module.css.map */

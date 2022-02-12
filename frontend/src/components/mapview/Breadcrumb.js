@@ -1,6 +1,9 @@
+import styles from './Mapview.module.css'
 const Breadcrumb = () => {
     return (
-        <div></div>
+        <div className={styles.breadcrumb}>
+            <div>Plant - Indraprasth</div>
+        </div>
     )
 }
 

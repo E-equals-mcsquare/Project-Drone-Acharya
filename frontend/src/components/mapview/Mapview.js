@@ -1,3 +1,4 @@
+import Footer from "../footer/Footer";
 import Header from "../header/Header";
 import SubHeader from "../header/SubHeader";
 import Main from "./Main";
@@ -8,6 +9,7 @@ const Mapview = () => {
       <Header />
       <SubHeader activeview="Mapview" />
       <Main />
+      <Footer />
     </div>
   );
 };
