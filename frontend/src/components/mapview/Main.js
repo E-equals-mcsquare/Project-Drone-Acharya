@@ -21,7 +21,7 @@ import sampleimages from '../../images/drone.png';
 import Breadcrumb from "./Breadcrumb";
 
 import { connect } from "react-redux"
-import { withRouter } from "react-router"
+import { withRouter } from "react-router-dom"
 
 const Main = (props) => {
   const [sidepanel, setSidePanel] = useState(true);

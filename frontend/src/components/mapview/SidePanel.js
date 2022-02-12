@@ -2,7 +2,7 @@ import Annotations from '../panel/Annotations'
 import styles from './Mapview.module.css'
 
 import { connect } from "react-redux"
-import { withRouter } from "react-router"
+import { withRouter } from "react-router-dom"
 const SidePanel = (props) => {
     return (
         <div className={styles.sidepanel}>

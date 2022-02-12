@@ -1,3 +1,5 @@
+import { withRouter } from 'react-router-dom'
+import { connect } from "react-redux"
 import styles from './Mapview.module.css'
 const Breadcrumb = () => {
     return (
@@ -7,4 +9,8 @@ const Breadcrumb = () => {
     )
 }
 
-export default Breadcrumb
+const mapStateToProps = (state) => {
+    return { ...state.olmap }
+  }
+  
+  export default withRouter(connect(mapStateToProps)(Breadcrumb))

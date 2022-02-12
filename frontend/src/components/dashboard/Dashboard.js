@@ -4,6 +4,8 @@ import kpiTiles from "../kpitiles/kpiTiles";
 import KPISection from "../dashboard/KPISection";
 import { useEffect, useState } from "react";
 import styles from "./Dashboard.module.css";
+import { connect } from "react-redux"
+import { withRouter } from "react-router-dom"
 const Dashboard = () => {
   const [summary, setSummary] = useState([{}]);
   const [erpInventory, setERPInventory] = useState([{}]);
@@ -47,4 +49,8 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+const mapStateToProps = (state) => {
+  return { ...state.olmap }
+}
+
+export default withRouter(connect(mapStateToProps)(Dashboard));

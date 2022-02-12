@@ -10,7 +10,7 @@ import Draw from "ol/interaction/Draw";
 import { getArea, getLength } from "ol/sphere";
 import { unByKey } from "ol/Observable";
 import { connect } from "react-redux";
-import { withRouter } from "react-router";
+import { withRouter } from "react-router-dom";
 import Overlay from "ol/Overlay";
 import Polygon from "ol/geom/Polygon";
 import LineString from "ol/geom/LineString";
@@ -298,9 +298,9 @@ const Annotations = (props) => {
       )}
 
       <div className={styles.annotationslist}>
-        {listannotations.map((obj) => {
+        {listannotations.map((obj, i) => {
           return (
-            <div className={styles.annotationlistitem}>
+            <div key={i} className={styles.annotationlistitem}>
               <div className={styles.annotationlistitemtitle}>
                 {obj.annotationname}
               </div>
