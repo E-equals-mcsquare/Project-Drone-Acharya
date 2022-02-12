@@ -48,7 +48,7 @@ const Main = (props) => {
       }),
     });
 
-    let response = await fetch("http://localhost:8080/getStockyards");
+    let response = await fetch(process.env.REACT_APP_SERVER_URL + "/getStockyards");
     let json = await response.json();
     let stockyards = json.data;
 
