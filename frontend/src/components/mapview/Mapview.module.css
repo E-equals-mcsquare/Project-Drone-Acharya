@@ -1,0 +1,23 @@
+.maindiv {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: fixed;
+  margin-top: 8rem;
+}
+
+.sidepanel {
+  background-color: #ffffff;
+  width: 30%;
+  height: 100%;
+  padding: 15px;
+  -webkit-box-shadow: 5px 7px 10px #cccccc;
+          box-shadow: 5px 7px 10px #cccccc;
+}
+/*# sourceMappingURL=Mapview.module.css.map */

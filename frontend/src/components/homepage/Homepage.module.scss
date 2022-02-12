@@ -1,0 +1,657 @@
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .tilesection {
+    padding: 15px 15px 15px 15px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+  }
+
+  .tile {
+    background-image: linear-gradient(45deg, #031b3e, #000000ee, #000000ee);
+    height: 9rem;
+    width: 20rem;
+    margin: 10px;
+    color: #ffffff;
+    animation: scaleinitial 0.5s ease;
+  }
+
+  .usecasesection {
+    padding: 15px 15px 15px 15px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    grid-row-gap: 20px;
+  }
+
+  .usecasecard {
+    // height: 100%;
+    // width: 25rem;
+    width: 20rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    animation: scaleinitial 0.5s ease;
+    position: relative;
+    // box-shadow: 0 7px 4px 0 hsl(0deg 0% 66% / 19%);
+    margin: 10px;
+  }
+
+  .usecasecardbody {
+    height: 80%;
+    width: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .usecaseimage {
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .usecaseimage:hover {
+    transform: scale(1.2);
+  }
+
+  .cardfooter {
+    font-weight: 500;
+    font-size: small;
+    color: #6d6d6d;
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    height: 20%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .usecasetitle {
+    bottom: 6rem;
+    left: 1rem;
+    position: absolute;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: large;
+    display: flex;
+    max-width: 60%;
+    z-index: 5;
+    font-family: Copperplate;
+    text-align: left;
+  }
+
+  .usecasenames {
+    font-weight: 500;
+    font-size: 32px;
+  }
+
+  .opaquerectangle {
+    background-color: #000000;
+    opacity: 0.5;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+
+  .usecaserequestno {
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+  }
+
+  .lastupdated {
+    margin-left: 15px;
+  }
+
+  .tablecardsection {
+    // width: 100%;
+    height: 100%;
+    padding: 15px 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+  
+  .tablecard {
+    // width: 100%;
+    height: 100%;
+    padding: 15px;
+    background-color: #ffffff;
+    margin: 15px;
+    max-height: 20rem;
+    overflow: hidden;
+    box-shadow: 5px 5px 12px #031b3e66;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .tilesection {
+    padding: 15px 15px 15px 15px;
+    display: flex;
+    gap: 15px;
+    grid-template-columns: auto auto auto auto;
+    justify-items: center;
+  }
+
+  .tile {
+    background-image: linear-gradient(45deg, #031b3e, #000000ee, #000000ee);
+    height: 9rem;
+    //   width: 18rem;
+    width: 100%;
+    margin: 10px;
+    color: #ffffff;
+    animation: scaleinitial 0.5s ease;
+  }
+
+  .usecasesection {
+    padding: 15px 15px 15px 15px;
+    display: flex;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+  }
+
+  .usecasecard {
+    // height: 100%;
+    // width: 25rem;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    animation: scaleinitial 0.5s ease;
+    position: relative;
+    // box-shadow: 0 7px 4px 0 hsl(0deg 0% 66% / 19%);
+    margin: 10px;
+  }
+
+  .usecasecardbody {
+    height: 80%;
+    width: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .usecaseimage {
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .usecaseimage:hover {
+    transform: scale(1.2);
+  }
+
+  .cardfooter {
+    font-weight: 500;
+    font-size: small;
+    color: #6d6d6d;
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    height: 20%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .usecasetitle {
+    bottom: 6rem;
+    left: 1rem;
+    position: absolute;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: large;
+    display: flex;
+    max-width: 60%;
+    z-index: 5;
+    font-family: Copperplate;
+    text-align: left;
+  }
+
+  .usecasenames {
+    font-weight: 500;
+    font-size: 32px;
+  }
+
+  .opaquerectangle {
+    background-color: #000000;
+    opacity: 0.5;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+
+  .usecaserequestno {
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+  }
+
+  .lastupdated {
+    margin-left: 15px;
+  }
+
+  .tablecardsection {
+    // width: 100%;
+    // height: 100%;
+    padding: 15px 15px 15px 15px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+  }
+  
+  .tablecard {
+    width: 55vh;
+    // height: 100%;
+    padding: 15px;
+    background-color: #ffffff;
+    margin: 15px;
+    max-height: 20rem;
+    overflow: hidden;
+    box-shadow: 5px 5px 12px #031b3e66;
+  }
+}
+
+/* ----------- Laptops ---------------------- */
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .tilesection {
+    padding: 15px 15px 15px 15px;
+    display: flex;
+    grid-template-columns: auto auto auto auto;
+    justify-items: center;
+  }
+
+  .tile {
+    background-image: linear-gradient(45deg, #031b3e, #000000ee, #000000ee);
+    height: 9rem;
+    //   width: 18rem;
+    width: 100%;
+    margin: 10px;
+    color: #ffffff;
+    animation: scaleinitial 0.5s ease;
+  }
+
+  .usecasesection {
+    padding: 15px 15px 15px 15px;
+    display: flex;
+    // grid-template-columns: auto auto auto;
+    justify-items: center;
+  }
+
+  .usecasecard {
+    // height: 100%;
+    // width: 25rem;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    animation: scaleinitial 0.5s ease;
+    position: relative;
+    // box-shadow: 0 7px 4px 0 hsl(0deg 0% 66% / 19%);
+    margin: 10px;
+  }
+
+  .usecasecardbody {
+    height: 80%;
+    width: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .usecaseimage {
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .usecaseimage:hover {
+    transform: scale(1.2);
+  }
+
+  .cardfooter {
+    font-weight: 500;
+    font-size: small;
+    color: #6d6d6d;
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    height: 20%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .usecasetitle {
+    bottom: 6rem;
+    left: 1rem;
+    position: absolute;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: large;
+    display: flex;
+    max-width: 60%;
+    z-index: 5;
+    font-family: Copperplate;
+    text-align: left;
+  }
+
+  .usecasenames {
+    font-weight: 500;
+    font-size: 32px;
+  }
+
+  .opaquerectangle {
+    background-color: #000000;
+    opacity: 0.5;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+
+  .usecaserequestno {
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+  }
+
+  .lastupdated {
+    margin-left: 15px;
+  }
+
+  .tablecardsection {
+    // width: 100%;
+    // height: 100%;
+    padding: 15px 15px 15px 15px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-items: center;
+  }
+  
+  .tablecardsection > .tablecard {
+    width: 85vh;
+    // height: 100%;
+    padding: 15px;
+    background-color: #ffffff;
+    margin: 15px;
+    max-height: 20rem;
+    overflow: hidden;
+    box-shadow: 5px 5px 12px #031b3e66;
+  }
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .tilesection {
+    padding: 15px 15px 15px 15px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-items: center;
+  }
+
+  .tile {
+    background-image: linear-gradient(45deg, #031b3e, #000000ee, #000000ee);
+    height: 9rem;
+    //   width: 18rem;
+    width: 100%;
+    margin: 10px;
+    color: #ffffff;
+    animation: scaleinitial 0.5s ease;
+  }
+
+  .usecasesection {
+    padding: 15px 15px 15px 15px;
+    display: flex;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+  }
+
+  .usecasecard {
+    // height: 100%;
+    // width: 25rem;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    animation: scaleinitial 0.5s ease;
+    position: relative;
+    // box-shadow: 0 7px 4px 0 hsl(0deg 0% 66% / 19%);
+    margin: 10px;
+  }
+
+  .usecasecardbody {
+    height: 80%;
+    width: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .usecaseimage {
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .usecaseimage:hover {
+    transform: scale(1.2);
+  }
+
+  .cardfooter {
+    font-weight: 500;
+    font-size: small;
+    color: #6d6d6d;
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    height: 20%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .usecasetitle {
+    bottom: 6rem;
+    left: 1rem;
+    position: absolute;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: large;
+    display: flex;
+    max-width: 60%;
+    z-index: 5;
+    font-family: Copperplate;
+    text-align: left;
+  }
+
+  .usecasenames {
+    font-weight: 500;
+    font-size: 32px;
+  }
+
+  .opaquerectangle {
+    background-color: #000000;
+    opacity: 0.5;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+
+  .usecaserequestno {
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+  }
+
+  .lastupdated {
+    margin-left: 15px;
+  }
+
+  .tablecardsection {
+    // width: 100%;
+    // height: 100%;
+    // padding: 15px 15px 15px 15px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    // justify-items: center;
+  }
+  
+  .tablecard {
+    // width: 100%;
+    // height: 100%;
+    padding: 15px;
+    background-color: #ffffff;
+    margin: 15px;
+    max-height: 20rem;
+    overflow: hidden;
+    box-shadow: 5px 5px 12px #031b3e66;
+  }
+}
+
+.tiletitle {
+  font-weight: 500;
+  text-align: left;
+  margin: 15px;
+  font-family: Copperplate;
+  font-size: 22px;
+}
+
+.tiletitle::first-letter {
+  text-decoration: underline;
+  text-decoration-color: green;
+  text-decoration-thickness: 4px;
+}
+
+@font-face {
+  font-family: "Copperplate";
+  src: "../../fonts/OPTICopperplate.otf";
+}
+
+.tilekpivalue {
+  font-family: Copperplate;
+  font-size: 42px;
+}
+
+.tilekpi {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.kpi {
+  width: 5rem;
+}
+
+.tilebody {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@keyframes scaleinitial {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.kpisectionhome {
+  padding-top: 4rem;
+}
+
+.kpisectiondashboard {
+  padding-top: 8rem;
+}
+
+.sectionheader {
+  display: flex;
+  color: white;
+  padding: 15px 30px 0 30px;
+  align-items: center;
+  font-weight: 700;
+  font-family: Copperplate;
+  font-size: 24px;
+}
+
+.greenlinestarter {
+  width: 5px;
+  margin: 0 5px 0 5px;
+  background-color: green;
+}
+
+.marquee {
+  position: absolute;
+  right: 30px;
+  top: 4.5rem;
+  transition: 0.3s ease;
+  animation: marqueappearance 0.5s ease;
+  color: #32d9ca;
+  direction: left;
+  width: 80%;
+  font-family: Copperplate;
+}
+
+@keyframes marqueeappearance {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.chartdiv {
+    width: 100%;
+    height: 100%;
+}
+
+.tabletitle {
+    font-weight: 700;
+    font-family: Copperplate;
+    font-size: 24px;
+    text-align: left;
+    display: flex;
+    margin-bottom: 15px;
+}

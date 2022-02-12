@@ -1,0 +1,133 @@
+@import '../homepage/Homepage.module.scss';
+
+@mixin headerclass {
+    height: 2rem;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    z-index: 6;
+    color: #ffffff;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding: 15px 0 15px 0;
+}
+
+.header {
+    @include headerclass();
+    background-color: #011026;
+}
+
+.subheader {
+    @include headerclass();
+    background-color: #011026d1;
+    margin: calc(2rem + 30px) 0 15px 0;
+    // padding: 15px;
+}
+
+@mixin subheaderbuttons {
+    border: 2px solid green;
+    padding: 8px;
+    width: 10rem;
+    font-weight: 600
+}
+
+.subheaderbuttonsactive {
+    @include subheaderbuttons();
+    background: green;
+}
+
+.subheaderbuttonsinactive {
+    @include subheaderbuttons();
+    background: none;
+    cursor: pointer;
+}
+
+.subheaderbuttonsinactive:hover {
+    color: green;
+}
+
+@font-face {
+    font-family: "Copperplate";
+    src: "../../fonts/OPTICopperplate.otf";
+}
+
+@mixin titleclass {
+    font-family: Copperplate;
+    display: flex;
+    align-items: center;
+    margin: 0px 10px 0px 10px;
+}
+.headertitle {
+    @include titleclass();
+    font-size: 24px;
+}
+
+.subheadertitle {
+    @include titleclass();
+    font-size: 18px;
+    border-left: 5px solid green;
+}
+
+.pagenavlinks {
+    margin: 0px 15px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.pagenavlinks:hover {
+    color: green;
+    transform: scale(1.1);
+}
+
+@mixin logo {
+    height: 32px;
+    margin: 0px 10px 0px 10px;
+}
+
+.logo {
+    @include logo
+}
+
+.dronelogo {
+    @include logo;
+    animation: spin 2s infinite;
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
+
+.rightsection {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    justify-content: center;
+    flex-direction: row;
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+.logo2 {
+    @include logo;
+    cursor: pointer;
+}
+
+.logo2:hover {
+    transition: 0.3s;
+    transform: scale(1.2);
+    opacity: 80;
+}
+
+.userlogo {
+    height: 40px;
+    width: 40px;
+    margin: 0px 10px 0px 10px;
+}
+
