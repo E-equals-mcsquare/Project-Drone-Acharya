@@ -48,7 +48,7 @@ const Main = (props) => {
       }),
     });
 
-    let response = await fetch(process.env.REACT_APP_SERVER_URL + "/getStockyards");
+    let response = await fetch(process.env.REACT_APP_SERVER_URL + "/api/mapview/getStockyards");
     let json = await response.json();
     let stockyards = json.data;
 

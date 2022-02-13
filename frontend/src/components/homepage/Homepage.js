@@ -10,13 +10,13 @@ import OverviewByLocation from "./OverviewByLocation";
 import kpiTiles from "../kpitiles/kpiTiles";
 
 let index = 0;
-const Homepage = () => {
-  const [marqueeText, setMarqueeText] = useState("")
+const Homepage = (props) => {
+  const [marqueeText, setMarqueeText] = useState("");
 
-  const [dataoverview, setDataOverview] = useState([{}])
-  const [actions, setActions] = useState([{}])
-  const [quality, setQuality] = useState([{}])
-  const [datacomparison, setDataComparison] = useState([{}])
+  const [dataoverview, setDataOverview] = useState([{}]);
+  const [actions, setActions] = useState([{}]);
+  const [quality, setQuality] = useState([{}]);
+  const [datacomparison, setDataComparison] = useState([{}]);
 
   useEffect(() => {
     let notifications = [
@@ -24,22 +24,66 @@ const Homepage = () => {
       "Boiler Plant needs immediate attention",
       "Drone data ready for processing",
     ];
-    setMarqueeText(notifications.join(" | "))
+    setMarqueeText(notifications.join(" | "));
 
-    /** 2 Fetch Calls */
-    setDataOverview([{kpi:'Upcoming Flights', kpivalue: 3}, {kpi:'Completed Flights', kpivalue: 21}])
-    /** 2 Fetch Call */
-    setActions([{kpi:'Reviews', kpivalue: 30}, {kpi:'Approvals', kpivalue: 163}])
-    /** 1 Fetch Call */
-    setQuality([{kpi:'Data Quality Alerts', kpivalue: 20}])
-    /** 1 Fetch Call */
-    setDataComparison([{kpi:'Mismatch Alerts', kpivalue: 10}])
+    const fetchDataOverview = async (api) => {
+      
+      let fetchCall = await fetch(
+        process.env.REACT_APP_SERVER_URL + "/api/homepage/kpis/getDataOverview"
+      );
+      let response = await fetchCall.json();
 
+      setDataOverview(response.data)
+      
+    }
+    fetchDataOverview()
 
-  }, []);
+    const fetchActions = async (api) => {
+      
+      let fetchCall = await fetch(
+        process.env.REACT_APP_SERVER_URL + "/api/homepage/kpis/getActions"
+      );
+      let response = await fetchCall.json();
 
-  const KPIs = kpiTiles(KPISection, dataoverview, actions, quality, datacomparison)
-  
+      setActions(response.data)
+      
+    }
+    fetchActions()
+
+    const fetchDataComparison = async (api) => {
+      
+      let fetchCall = await fetch(
+        process.env.REACT_APP_SERVER_URL + "/api/homepage/kpis/getDataComparison"
+      );
+      let response = await fetchCall.json();
+
+      setDataComparison(response.data)
+      
+    }
+    fetchDataComparison()
+    
+    const fetchDataQuality = async (api) => {
+      
+      let fetchCall = await fetch(
+        process.env.REACT_APP_SERVER_URL + "/api/homepage/kpis/getQuality"
+      );
+      let response = await fetchCall.json();
+
+      setQuality(response.data)
+      
+    }
+    fetchDataQuality()
+
+  }, [props]);
+
+  const KPIs = kpiTiles(
+    KPISection,
+    dataoverview,
+    actions,
+    quality,
+    datacomparison
+  );
+
   return (
     <>
       <Header />
@@ -47,12 +91,12 @@ const Homepage = () => {
       <marquee className={styles.marquee}>{marqueeText}</marquee>
       <Usecases />
       <div>
-      <div className={styles.tablecardsection}>
-        <RecentlyVisited />
-        <FlightByHours />
-        <Annotations />
-        <OverviewByLocation />
-      </div>
+        <div className={styles.tablecardsection}>
+          <RecentlyVisited />
+          <FlightByHours />
+          <Annotations />
+          <OverviewByLocation />
+        </div>
       </div>
     </>
   );
