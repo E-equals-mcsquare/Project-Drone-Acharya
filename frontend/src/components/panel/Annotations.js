@@ -15,6 +15,7 @@ import Overlay from "ol/Overlay";
 import Polygon from "ol/geom/Polygon";
 import LineString from "ol/geom/LineString";
 import { useEffect, useState } from "react";
+import deleteicon from "../../images/delete.png";
 const Annotations = (props) => {
   const [drawingstate, setDrawingState] = useState(false);
   const [newannotation, setNewAnnotation] = useState(false);
@@ -233,32 +234,37 @@ const Annotations = (props) => {
   useEffect(() => {
     /** Fetch Call */
 
-    setListAnnotations([{
-        annotationname: 'Welding Point',
-        annotationcomment: 'Needs to be replaced',
-        annotationdate: '21-02-2022'
-    }, {
-        annotationname: 'Welding Point',
-        annotationcomment: 'Needs to be replaced',
-        annotationdate: '21-02-2022'
-    }, {
-        annotationname: 'Welding Point',
-        annotationcomment: 'Needs to be replaced',
-        annotationdate: '21-02-2022'
-    }, {
-        annotationname: 'Welding Point',
-        annotationcomment: 'Needs to be replaced',
-        annotationdate: '21-02-2022'
-    }, {
-        annotationname: 'Welding Point',
-        annotationcomment: 'Needs to be replaced',
-        annotationdate: '21-02-2022'
-    }])
+    setListAnnotations([
+      {
+        annotationname: "Welding Point",
+        annotationcomment: "Needs to be replaced",
+        annotationdate: "21-02-2022",
+      },
+      {
+        annotationname: "Welding Point",
+        annotationcomment: "Needs to be replaced",
+        annotationdate: "21-02-2022",
+      },
+      {
+        annotationname: "Welding Point",
+        annotationcomment: "Needs to be replaced",
+        annotationdate: "21-02-2022",
+      },
+      {
+        annotationname: "Welding Point",
+        annotationcomment: "Needs to be replaced",
+        annotationdate: "21-02-2022",
+      },
+      {
+        annotationname: "Welding Point",
+        annotationcomment: "Needs to be replaced",
+        annotationdate: "21-02-2022",
+      },
+    ]);
   }, []);
 
   return (
     <>
-      <div className={styles.sidepaneltitle}>Annotations</div>
 
       <div className={styles.sidepanelsubheader}>Create New</div>
 
@@ -300,14 +306,30 @@ const Annotations = (props) => {
       <div className={styles.annotationslist}>
         {listannotations.map((obj, i) => {
           return (
-            <div key={i} className={styles.annotationlistitem}>
-              <div className={styles.annotationlistitemtitle}>
-                {obj.annotationname}
+            <div key={i}
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                width: "100%",
+                alignItems: "center",
+              }}
+            >
+              <div className={styles.listitem}>
+                <div className={styles.listitemtitle}>
+                  {obj.annotationname}
+                </div>
+                <div className={styles.listitemcomment}>
+                  {obj.annotationcomment}
+                </div>
+                <div className={styles.listitemdate}>
+                  {obj.annotationdate}
+                </div>
               </div>
-              <div className={styles.annotationlistitemcomment}>
-                {obj.annotationcomment}
-              </div>
-              <div className={styles.annotationlistitemdate}>{obj.annotationdate}</div>
+              <img
+                alt="Delete"
+                src={deleteicon}
+                className={styles.iconstyle}
+              />
             </div>
           );
         })}
@@ -317,7 +339,7 @@ const Annotations = (props) => {
 };
 
 const mapStateToProps = (state) => {
-  return { ...state.olmap };
+  return { ...state.olmap, ...state.currentpanel };
 };
 
 export default withRouter(connect(mapStateToProps)(Annotations));

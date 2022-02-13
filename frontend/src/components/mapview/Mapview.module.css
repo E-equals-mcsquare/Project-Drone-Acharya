@@ -13,7 +13,7 @@
 }
 
 .sidepanel {
-  background-color: #ffffff;
+  background-color: #f8f8f8;
   width: 30%;
   height: 100%;
   padding: 15px;
@@ -129,6 +129,7 @@
   font-weight: 500;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  border: 1px solid #cccccc;
 }
 
 .shapetype:hover {
@@ -203,7 +204,7 @@
   width: 100%;
 }
 
-.annotationslist {
+.list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,7 +216,7 @@
   height: calc(100% - 4rem);
 }
 
-.annotationlistitem {
+.listitem {
   padding: 10px;
   height: 4rem;
   display: -webkit-box;
@@ -229,25 +230,46 @@
   border-bottom: 1px solid #cccccc;
   border-top: 1px solid #cccccc;
   cursor: pointer;
+  width: 80%;
 }
 
-.annotationlistitem:hover {
+.listitem:hover {
   background-color: #cccccc;
 }
 
-.annotationlistitemtitle {
+.listitemtitle {
   font-weight: 700;
   margin: 5px 0;
 }
 
-.annotationlistitemcomment {
+.listitemcomment {
   color: #000000;
   font-size: 14px;
 }
 
-.annotationlistitemdate {
+.listitemdate {
   color: #7a7979;
   font-size: 14px;
   margin: 5px 0;
+}
+
+.iconstyle {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.iconstyle:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.customdropdown {
+  height: 2rem;
+  color: green;
+  font-weight: 600;
+  border: 2px solid green;
 }
 /*# sourceMappingURL=Mapview.module.css.map */

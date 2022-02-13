@@ -14,6 +14,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  border-top: 1px solid #cccccc;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footeroption {
@@ -33,6 +37,8 @@
   -webkit-transition: 0.3s;
   transition: 0.3s;
   font-family: Copperplate;
+  margin-top: -15px;
+  margin-bottom: -15px;
 }
 
 .footeroption:hover {
@@ -47,5 +53,44 @@
 
 .footeroption:last-of-type {
   border-right: none;
+}
+
+.footeroption:focus {
+  background-color: green;
+  color: white;
+}
+
+.panelbuttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.threedbutton {
+  background-color: green;
+  width: 10rem;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  font-family: Copperplate;
+  font-size: 18px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.threedbutton:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=Footer.module.css.map */
