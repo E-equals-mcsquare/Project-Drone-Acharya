@@ -49,20 +49,7 @@ const Stockyards = (props) => {
       ],
       xaxis: {
         type: "datetime",
-      },
-      // yaxis: [
-      //   {
-      //     title: {
-      //       text: "Material Volume",
-      //     },
-      //   },
-      //   {
-      //     opposite: true,
-      //     title: {
-      //       text: "Deviation",
-      //     },
-      //   },
-      // ],
+      }
     },
   });
 

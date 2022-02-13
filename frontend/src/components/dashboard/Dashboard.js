@@ -6,6 +6,10 @@ import { useEffect, useState } from "react";
 import styles from "./Dashboard.module.css";
 import { connect } from "react-redux"
 import { withRouter } from "react-router-dom"
+import MaterialOverview from "./MaterialOverview";
+import VolumeTimeline from "./VolumeTimeline";
+import StockAlerts from "./StockAlerts";
+import DroneData from "./DroneData";
 const Dashboard = () => {
   const [summary, setSummary] = useState([{}]);
   const [erpInventory, setERPInventory] = useState([{}]);
@@ -44,7 +48,16 @@ const Dashboard = () => {
     <div>
       <Header />
       <SubHeader activeview="Dashboard" />
-      <div className={styles.dashboard}>{KPIs}</div>
+      <div className={styles.dashboard}>
+        {KPIs}
+        <div className={styles.tablecardsection}>
+        <MaterialOverview />
+        <VolumeTimeline />
+        <StockAlerts />
+        <DroneData />
+      </div>  
+      </div>
+      
     </div>
   );
 };

@@ -625,8 +625,12 @@
   }
 }
 
-.kpisection {
+.kpisectionhome {
   padding-top: 4rem;
+}
+
+.kpisectiondashboard {
+  padding-top: 8rem;
 }
 
 .sectionheader {
@@ -736,7 +740,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 15px 0 15px 0;
-  background-color: #011026d1;
+  background-color: #16243a;
   margin: calc(2rem + 30px) 0 15px 0;
 }
 

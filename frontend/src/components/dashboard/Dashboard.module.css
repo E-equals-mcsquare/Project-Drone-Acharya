@@ -1,3 +1,710 @@
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .tilesection {
+    padding: 15px 15px 15px 15px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    justify-items: center;
+  }
+  .tile {
+    background-image: linear-gradient(45deg, #031b3e, #000000ee, #000000ee);
+    height: 9rem;
+    width: 20rem;
+    margin: 10px;
+    color: #ffffff;
+    -webkit-animation: scaleinitial 0.5s ease;
+            animation: scaleinitial 0.5s ease;
+  }
+  .usecasesection {
+    padding: 15px 15px 15px 15px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    justify-items: center;
+    grid-row-gap: 20px;
+  }
+  .usecasecard {
+    width: 20rem;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-animation: scaleinitial 0.5s ease;
+            animation: scaleinitial 0.5s ease;
+    position: relative;
+    margin: 10px;
+  }
+  .usecasecardbody {
+    height: 80%;
+    width: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    display: inline-block;
+    overflow: hidden;
+  }
+  .usecaseimage {
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+  .usecaseimage:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .cardfooter {
+    font-weight: 500;
+    font-size: small;
+    color: #6d6d6d;
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 20%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .usecasetitle {
+    bottom: 6rem;
+    left: 1rem;
+    position: absolute;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: large;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 60%;
+    z-index: 5;
+    font-family: Copperplate;
+    text-align: left;
+  }
+  .usecasenames {
+    font-weight: 500;
+    font-size: 32px;
+  }
+  .opaquerectangle {
+    background-color: #000000;
+    opacity: 0.5;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+  .usecaserequestno {
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+  }
+  .lastupdated {
+    margin-left: 15px;
+  }
+  .tablecardsection {
+    height: 100%;
+    padding: 15px 15px 15px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-items: center;
+  }
+  .tablecard {
+    height: 100%;
+    padding: 15px;
+    background-color: #ffffff;
+    margin: 15px;
+    max-height: 20rem;
+    overflow: hidden;
+    -webkit-box-shadow: 5px 5px 12px #031b3e66;
+            box-shadow: 5px 5px 12px #031b3e66;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .tilesection {
+    padding: 15px 15px 15px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15px;
+    -ms-grid-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+    justify-items: center;
+  }
+  .tile {
+    background-image: linear-gradient(45deg, #031b3e, #000000ee, #000000ee);
+    height: 9rem;
+    width: 100%;
+    margin: 10px;
+    color: #ffffff;
+    -webkit-animation: scaleinitial 0.5s ease;
+            animation: scaleinitial 0.5s ease;
+  }
+  .usecasesection {
+    padding: 15px 15px 15px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    justify-items: center;
+  }
+  .usecasecard {
+    width: 100%;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-animation: scaleinitial 0.5s ease;
+            animation: scaleinitial 0.5s ease;
+    position: relative;
+    margin: 10px;
+  }
+  .usecasecardbody {
+    height: 80%;
+    width: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    display: inline-block;
+    overflow: hidden;
+  }
+  .usecaseimage {
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+  .usecaseimage:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .cardfooter {
+    font-weight: 500;
+    font-size: small;
+    color: #6d6d6d;
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 20%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .usecasetitle {
+    bottom: 6rem;
+    left: 1rem;
+    position: absolute;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: large;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 60%;
+    z-index: 5;
+    font-family: Copperplate;
+    text-align: left;
+  }
+  .usecasenames {
+    font-weight: 500;
+    font-size: 32px;
+  }
+  .opaquerectangle {
+    background-color: #000000;
+    opacity: 0.5;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+  .usecaserequestno {
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+  }
+  .lastupdated {
+    margin-left: 15px;
+  }
+  .tablecardsection {
+    padding: 15px 15px 15px 15px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    justify-items: center;
+  }
+  .tablecard {
+    width: 55vh;
+    padding: 15px;
+    background-color: #ffffff;
+    margin: 15px;
+    max-height: 20rem;
+    overflow: hidden;
+    -webkit-box-shadow: 5px 5px 12px #031b3e66;
+            box-shadow: 5px 5px 12px #031b3e66;
+  }
+}
+
+/* ----------- Laptops ---------------------- */
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .tilesection {
+    padding: 15px 15px 15px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-grid-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+    justify-items: center;
+  }
+  .tile {
+    background-image: linear-gradient(45deg, #031b3e, #000000ee, #000000ee);
+    height: 9rem;
+    width: 100%;
+    margin: 10px;
+    color: #ffffff;
+    -webkit-animation: scaleinitial 0.5s ease;
+            animation: scaleinitial 0.5s ease;
+  }
+  .usecasesection {
+    padding: 15px 15px 15px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-items: center;
+  }
+  .usecasecard {
+    width: 100%;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-animation: scaleinitial 0.5s ease;
+            animation: scaleinitial 0.5s ease;
+    position: relative;
+    margin: 10px;
+  }
+  .usecasecardbody {
+    height: 80%;
+    width: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    display: inline-block;
+    overflow: hidden;
+  }
+  .usecaseimage {
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+  .usecaseimage:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .cardfooter {
+    font-weight: 500;
+    font-size: small;
+    color: #6d6d6d;
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 20%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .usecasetitle {
+    bottom: 6rem;
+    left: 1rem;
+    position: absolute;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: large;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 60%;
+    z-index: 5;
+    font-family: Copperplate;
+    text-align: left;
+  }
+  .usecasenames {
+    font-weight: 500;
+    font-size: 32px;
+  }
+  .opaquerectangle {
+    background-color: #000000;
+    opacity: 0.5;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+  .usecaserequestno {
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+  }
+  .lastupdated {
+    margin-left: 15px;
+  }
+  .tablecardsection {
+    padding: 15px 15px 15px 15px;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 10px;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    justify-items: center;
+  }
+  .tablecardsection > .tablecard {
+    width: 85vh;
+    padding: 15px;
+    background-color: #ffffff;
+    margin: 15px;
+    max-height: 20rem;
+    overflow: hidden;
+    -webkit-box-shadow: 5px 5px 12px #031b3e66;
+            box-shadow: 5px 5px 12px #031b3e66;
+  }
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .tilesection {
+    padding: 15px 15px 15px 15px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+    justify-items: center;
+  }
+  .tile {
+    background-image: linear-gradient(45deg, #031b3e, #000000ee, #000000ee);
+    height: 9rem;
+    width: 100%;
+    margin: 10px;
+    color: #ffffff;
+    -webkit-animation: scaleinitial 0.5s ease;
+            animation: scaleinitial 0.5s ease;
+  }
+  .usecasesection {
+    padding: 15px 15px 15px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    justify-items: center;
+  }
+  .usecasecard {
+    width: 100%;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-animation: scaleinitial 0.5s ease;
+            animation: scaleinitial 0.5s ease;
+    position: relative;
+    margin: 10px;
+  }
+  .usecasecardbody {
+    height: 80%;
+    width: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    display: inline-block;
+    overflow: hidden;
+  }
+  .usecaseimage {
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+  .usecaseimage:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .cardfooter {
+    font-weight: 500;
+    font-size: small;
+    color: #6d6d6d;
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 20%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .usecasetitle {
+    bottom: 6rem;
+    left: 1rem;
+    position: absolute;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: large;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 60%;
+    z-index: 5;
+    font-family: Copperplate;
+    text-align: left;
+  }
+  .usecasenames {
+    font-weight: 500;
+    font-size: 32px;
+  }
+  .opaquerectangle {
+    background-color: #000000;
+    opacity: 0.5;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+  .usecaserequestno {
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+  }
+  .lastupdated {
+    margin-left: 15px;
+  }
+  .tablecardsection {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+  }
+  .tablecard {
+    padding: 15px;
+    background-color: #ffffff;
+    margin: 15px;
+    max-height: 20rem;
+    overflow: hidden;
+    -webkit-box-shadow: 5px 5px 12px #031b3e66;
+            box-shadow: 5px 5px 12px #031b3e66;
+  }
+}
+
+.tiletitle {
+  font-weight: 500;
+  text-align: left;
+  margin: 15px;
+  font-family: Copperplate;
+  font-size: 22px;
+}
+
+.tiletitle::first-letter {
+  text-decoration: underline;
+  -webkit-text-decoration-color: green;
+          text-decoration-color: green;
+  text-decoration-thickness: 4px;
+}
+
+@font-face {
+  font-family: "Copperplate";
+  src: "../../fonts/OPTICopperplate.otf";
+}
+
+.tilekpivalue {
+  font-family: Copperplate;
+  font-size: 42px;
+}
+
+.tilekpi {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.kpi {
+  width: 5rem;
+}
+
+.tilebody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@-webkit-keyframes scaleinitial {
+  from {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleinitial {
+  from {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.kpisectionhome {
+  padding-top: 4rem;
+}
+
+.kpisectiondashboard {
+  padding-top: 8rem;
+}
+
+.sectionheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  padding: 15px 30px 0 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  font-family: Copperplate;
+  font-size: 24px;
+}
+
+.greenlinestarter {
+  width: 5px;
+  margin: 0 5px 0 5px;
+  background-color: green;
+}
+
+.marquee {
+  position: absolute;
+  right: 30px;
+  top: 4.5rem;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-animation: marqueappearance 0.5s ease;
+          animation: marqueappearance 0.5s ease;
+  color: #32d9ca;
+  direction: left;
+  width: 80%;
+  font-family: Copperplate;
+}
+
+@-webkit-keyframes marqueeappearance {
+  from {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes marqueeappearance {
+  from {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.chartdiv {
+  width: 100%;
+  height: 100%;
+}
+
+.tabletitle {
+  font-weight: 700;
+  font-family: Copperplate;
+  font-size: 24px;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
 .dashboard {
   background-color: #e7e7e7;
 }

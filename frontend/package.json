@@ -25,6 +25,7 @@
     "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "serve": "serve -s build",
     "compilesass": "sass src"
   },
   "eslintConfig": {
@@ -46,6 +47,7 @@
     ]
   },
   "devDependencies": {
-    "sass": "^1.49.7"
+    "sass": "^1.49.7",
+    "serve": "^13.0.2"
   }
 }
